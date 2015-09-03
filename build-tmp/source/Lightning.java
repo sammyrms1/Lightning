@@ -29,7 +29,8 @@ public void setup()
 }
 public void draw()
 {
-	stroke((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
+	int yellow = (int)(Math.random()*255);
+	stroke(yellow, yellow, (int)(Math.random()*255));
 	while (endX < 300){
 		endX = startX + (int)(Math.random()*9);
 		endY = startY + (int)(Math.random()*18)-9;
@@ -38,10 +39,14 @@ public void draw()
 		startX = endX;
 		startY = endY;
 	}
-
+	startX = 0;
+	startY = 150;
+	endX = 0;
+	endY = 150;
 }
 public void mousePressed()
 {
+	background(0, 0, 0);
 	startX = 0;
 	startY = 150;
 	endX = 0;
