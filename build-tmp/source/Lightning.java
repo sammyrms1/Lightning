@@ -23,9 +23,9 @@ int endY = 150;
 //Main Program
 public void setup()
 {
-  size(300,300);
-  strokeWeight(6);
-  background(0, 0, 0);
+	size(300,300);
+	strokeWeight(6);
+	background(0, 0, 0);
 }
 public void draw()
 {
