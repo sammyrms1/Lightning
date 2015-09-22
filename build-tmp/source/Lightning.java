@@ -23,18 +23,18 @@ int endY = 150;
 //Main Program
 public void setup()
 {
-	size(300,300);
+	size(600,300);
 	strokeWeight(6);
-	background(0, 0, 0);
 }
 public void draw()
 {
+	background(0, 0, 0);
 	int yellow = (int)(Math.random()*255);
-	stroke(yellow, yellow, (int)(Math.random()*255));
-	while (endX < 300){
+	stroke(255, 255, yellow);
+	while (endX < 600){
 		endX = startX + (int)(Math.random()*9);
 		endY = startY + (int)(Math.random()*18)-9;
-		System.out.println("y: " + endY);
+		//System.out.println("y: " + endY);
 		line(startX, startY, endX, endY);
 		startX = endX;
 		startY = endY;
